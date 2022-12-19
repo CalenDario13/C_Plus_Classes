@@ -18,12 +18,14 @@ int main(){
 
     std::cout << "Type your full name: " << std::endl;
     std::getline(std::cin, full_name);
+
     std::cout << "Enter your age: " << std::endl;
     std::cin >> age;
 
     // Print a Message
     // std::cout << "You are " << name << " " << surname << " and you are " << age << " years old." << std::endl;
     std::cout << "You are " << full_name << " and you are " << age << " years old." << std::endl;
+    
     // Print a Log
     std::clog << "This is a Log message" << std::endl;
     // Print an Error
