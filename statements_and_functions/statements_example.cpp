@@ -1,6 +1,7 @@
 #include <iostream>
 
 // A Statement is anything followed by a semicolumn ";"
+// Statements are top-down way
 
 int addNumbers(int first_number, int second_number){
     int result = first_number + second_number;
