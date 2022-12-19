@@ -8,8 +8,8 @@ int main(){
     // How to input:
 
     int age;
-    std::string surname;
-    std::string name;
+    //std::string surname;
+    //std::string name;
     std::string full_name;
 
     /*
