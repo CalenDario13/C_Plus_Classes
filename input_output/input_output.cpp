@@ -7,10 +7,11 @@ int main(){
     // How to input:
 
     int age;
+    std::string surname;
     std::string name;
 
-    std::cout << "Enter your name: " << std::endl;
-    std::cin >> name;
+    std::cout << "Enter your name and surname separted by a space: " << std::endl;
+    std::cin >> name >> surname;
 
     std::cout << "Enter your age: " << std::endl;
     std::cin >> age;
