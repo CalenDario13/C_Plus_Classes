@@ -2,7 +2,7 @@
 #include <string>
 
 
-// How to output:
+// How to input/output:
 int main(){
 
     // How to input:
