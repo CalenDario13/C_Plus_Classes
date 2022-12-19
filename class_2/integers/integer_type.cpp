@@ -68,7 +68,7 @@ int main(){
     It is not possible to store a fraction as integer
     It raises a Warning while compiling and save only the integer part
     
-    int narrowing_conversion(2.9);
+    int narrowing_conversion (2.9);
 
     Instead with curly brackets it raises an error
     
