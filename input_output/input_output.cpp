@@ -17,7 +17,7 @@ int main(){
     std::cin >> age;
 
     // Print a Message
-    std::cout << "You are " << name << " and you are " << age << " old." << std::endl;
+    std::cout << "You are " << name << " " << surname << " and you are " << age << " years old." << std::endl;
     // Print a Log
     std::clog << "This is a Log message" << std::endl;
     // Print an Error
