@@ -1,15 +1,19 @@
 #include <iostream>
 
-// A Statement is anything followed by ";"
+// A Statement is anything followed by a semicolumn ";"
 
 int addNumbers(int first_number, int second_number){
-    int sum = first_number + second_number;
-    return sum;
+    int result = first_number + second_number;
+    return result;
 }
 
 int main(int argc, char **argv){
+
     int firstNumber = 12;
     int secondNumber = 9;
+
+    std::cout << "First Number is: " << firstNumber << std::endl;
+    std::cout << "Second Number is: " << secondNumber << std::endl;
 
     int sum = addNumbers(firstNumber, secondNumber);
 
