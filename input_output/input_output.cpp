@@ -31,6 +31,8 @@ int main(){
     std::clog << "Log Message: This is a Log message" << std::endl;
     // Print an Error
     std::cerr << "Error Message: Somenthing went wrong" << std::endl;
+
+    return 0;
 }
 
 
