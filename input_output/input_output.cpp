@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 
 
 // How to output:
@@ -27,9 +28,9 @@ int main(){
     std::cout << "You are " << full_name << " and you are " << age << " years old." << std::endl;
     
     // Print a Log
-    std::clog << "This is a Log message" << std::endl;
+    std::clog << "Log Message: This is a Log message" << std::endl;
     // Print an Error
-    std::cerr << "Somenthing went wrong" << std::endl;
+    std::cerr << "Error Message: Somenthing went wrong" << std::endl;
 }
 
 
