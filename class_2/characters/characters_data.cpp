@@ -12,6 +12,5 @@ int main(){
 
     std::cout << "ASCII " << static_cast<int>(character2) << " is " << character2 << " in letters" << std::endl;
 
-
     return 0;
 }
