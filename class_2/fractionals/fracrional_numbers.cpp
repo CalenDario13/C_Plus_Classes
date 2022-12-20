@@ -32,8 +32,6 @@ int main(){
     std::cout << " " << std::endl;
     std::cout << "Divide a number by zero Returns: " << inf_result << std::endl;
     std::cout << "0 / 0 is: " << nan_result << std::endl;
-
-
     
     return 0;
 }
