@@ -1,9 +1,11 @@
 #include <iostream>
 #include <iomanip>
 
+// They are available only for addition and subtraction
+
 int main(){
 
-    int value {5};
+    int value { 5 };
     std::cout << "the value is incrementing: " << value++ << std::endl;
     std::cout << "Now the value is: " << value << std::endl;
 
