@@ -33,19 +33,12 @@ int main(){
             std::cout << "Active tool is eraser\nMoving on" << std::endl;
         }
         break;
-
-        case Rectangle: {
-            std::cout << "Active tool is rectangle\nMoving on" << std::endl;
-        }
-        break;
-
-            case Circle: {
-            std::cout << "Active tool is circle\nMoving on" << std::endl;
-        }
-        break;
-
-            case Ellipse: {
-            std::cout << "Active tool is ellipse\nMoving on" << std::endl;
+        
+        // It is possible to join multiple choices.
+        case Rectangle: 
+        case Circle: 
+        case Ellipse: {
+            std::cout << "Active tool is a drawing shape\nMoving on" << std::endl;
         }
         break;
 
@@ -55,6 +48,8 @@ int main(){
             break;
 
     }
+
+
 
     return 0;
 }
