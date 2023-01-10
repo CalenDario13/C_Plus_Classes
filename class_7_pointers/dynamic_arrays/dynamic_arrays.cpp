@@ -19,7 +19,7 @@ int main(){
     p_salaries = nullptr;
 
     // In DYNAMIC ARRAYS IT IS NOT POSSIBLE TO USE std::size AND  
-    // AND LOOPS LIKE (for el : array){}
+    // AND LOOPS LIKE for(double el : array){}
 
     return 0;
 
