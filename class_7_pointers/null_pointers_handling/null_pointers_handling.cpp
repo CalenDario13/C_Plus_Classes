@@ -9,12 +9,14 @@ int main(){
 
     if(p_num1){
         std::cout << "VALID ADDRESS: " << p_num1 << "*p_num1: " << *p_num1 << std::endl;
+        delete p_num1;
+        p_num1 = nullptr; 
     }else{
-        std::cout << "INVALID ADDRESS: " <<  std::endl;
+        std::cout << "INVALID ADDRESS: " <<  std::endl;  
+        delete p_num1;
+        // It is not needed if the pointer is already nullptr
+
     }
-    
-    delete p_num1;
-    p_num1 = nullptr; // It is not needed if the pointer is already nullptr
 
     return 0;
 
