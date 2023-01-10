@@ -18,6 +18,8 @@ int main(){
     delete[] p_salaries;
     p_salaries = nullptr;
 
+    // In DYNAMIC ARRAYS IT IS NOT POSSIBLE TO USE std::size AND  
+    // AND LOOPS LIKE (for el : array){}
 
     return 0;
 
