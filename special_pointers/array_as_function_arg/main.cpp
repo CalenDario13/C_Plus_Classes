@@ -18,6 +18,8 @@ int SumElements(int A[], int size){
 
 void DoubleElments(int* A, int size){
     int i, sum {0};
+
+    // int* A or int A[] is the same
     for(i = 0; i < size; i++){
        A[i] = 2*A[i];
     }
