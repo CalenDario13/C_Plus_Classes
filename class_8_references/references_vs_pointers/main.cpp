@@ -36,7 +36,14 @@ int main(){
 
     std::cout << std::endl;
     std::cout << "New value is: " << double_data << std::endl;
-       
+
+    // With pointer is possible to assign a new variable (NOT IN REFERENCES):
+    std::cout << std::endl;
+    std::cout << "Original Pointer addrss: " << ptr_double << std::endl;
+
+    ptr_double = &other_double;
+
+    std::cout << "New Pointer addrss: " << ptr_double << std::endl;   
 
     return 0;
 }
