@@ -5,9 +5,11 @@ int Factrotial(int n){
     // base case
     if(n==1){
         return 1;
-    // recursion assumption
     }else{
-        return n * Factrotial(n - 1);
+        // recursion assumption
+        int subproblem{ Factrotial(n - 1) };
+        // self work
+        return n * subproblem;
     }
 }
 
