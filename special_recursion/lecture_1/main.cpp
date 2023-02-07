@@ -11,6 +11,7 @@ int Factrotial(int n){
         // self work
         return n * subproblem;
     }
+    // return (n <= 1) ? 1 : n*(Factorial(n-1))
 }
 
 int main(){
