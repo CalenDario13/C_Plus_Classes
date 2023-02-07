@@ -14,13 +14,27 @@ int Factrotial(int n){
     // return (n <= 1) ? 1 : n*(Factorial(n-1))
 }
 
+int Fibonacci(int n){
+    if (n==0 || n==1){
+        return n;
+    }else{
+        int subprob1{Fibonacci(n-1)};
+        int subprob2{Fibonacci(n-2)};
+        return subprob1 + subprob2;
+    }
+}
+
 int main(){
     unsigned int n{};
     int fact{};
+    int fib{};
     cout << "Give a number to compute the factorial: ";
     cin >> n;
 
     fact = Factrotial(n);
     cout << "The factorial of " << n << " is " << fact << endl;
+
+    fib = Fibonacci(n);
+    cout << "The Fibonacci value of " << n << " is " << fib << endl;
     return 0;
 }
