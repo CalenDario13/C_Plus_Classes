@@ -24,12 +24,20 @@ int Fibonacci(int n){
     }
 }
 
+int PrintNaturalN(int n){
+    if (n==0) return 0;
+    PrintNaturalN(n - 1);
+    cout << n << endl;
+}
+
 int main(){
     unsigned int n{};
     int fact{};
     int fib{};
     cout << "Give a number to compute the factorial: ";
     cin >> n;
+    cout << "The series of number is: " << endl;
+    PrintNaturalN(n);
 
     fact = Factrotial(n);
     cout << "The factorial of " << n << " is " << fact << endl;
