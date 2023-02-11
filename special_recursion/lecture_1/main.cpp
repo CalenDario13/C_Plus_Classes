@@ -24,20 +24,61 @@ int Fibonacci(int n){
     }
 }
 
-int PrintNaturalN(int n){
-    if (n==0) return 0;
-    PrintNaturalN(n - 1);
-    cout << n << endl;
+void PrintNaturalN(int n, bool decr){
+    // Base Assumption
+    if (n==0) return;
+
+    if(decr){
+        cout << n << " ";
+        PrintNaturalN(n - 1, decr);
+    }else{
+        // Recursive Assumption
+        PrintNaturalN(n - 1, decr);
+        // Self Work
+        cout << n << " ";
+    }
+    
 }
+
+void PrintBothDir(int n){
+    if (n==1){
+        cout << n << " ";
+        return;
+    }else{
+        cout << n << " ";
+        PrintBothDir(n - 1);
+        cout << n << " ";
+    }
+    
+}
+
+
 
 int main(){
     unsigned int n{};
     int fact{};
     int fib{};
+    int order{};
+
     cout << "Give a number to compute the factorial: ";
     cin >> n;
-    cout << "The series of number is: " << endl;
-    PrintNaturalN(n);
+    cout << "In which order do you want to print the series 0-Decr, 1-Cresc, 2-Both: ";
+    cin >> order;
+
+    switch (order)
+    {
+    case 0:
+        PrintNaturalN(n, true);
+        break;
+    case 1:
+        PrintNaturalN(n, false);
+        break;
+    default:
+        PrintBothDir(n);
+        break;
+    }
+
+    cout << endl;
 
     fact = Factrotial(n);
     cout << "The factorial of " << n << " is " << fact << endl;
