@@ -16,7 +16,7 @@ int Factrotial(int n){
 
 int Fibonacci(int n){
     if (n==0 || n==1){
-        return n;
+        return 1;
     }else{
         int subprob1{Fibonacci(n-1)};
         int subprob2{Fibonacci(n-2)};
@@ -52,6 +52,20 @@ void PrintBothDir(int n){
     
 }
 
+int NoConsecutiveOnes(int n){
+    // Find #Binary arrays whith no adiacents 1s
+    // For a martrix of nxn 
+    // Where each row is a binary array
+
+    if (n==1 || n ==2){
+        return n + 1;
+    }else{
+        int firstVal{NoConsecutiveOnes(n-1)};
+        int secondVal{NoConsecutiveOnes(n-2)};
+        return firstVal + secondVal;
+
+    }
+}
 
 
 int main(){
@@ -59,6 +73,7 @@ int main(){
     int fact{};
     int fib{};
     int order{};
+    int zeroCombo{};
 
     cout << "Give a number to compute the factorial: ";
     cin >> n;
@@ -85,5 +100,9 @@ int main(){
 
     fib = Fibonacci(n);
     cout << "The Fibonacci value of " << n << " is " << fib << endl;
+    
+    zeroCombo = NoConsecutiveOnes(n);
+    cout << "Given a Binary Array of Size " << n << ". There are " <<  zeroCombo << " combos which do not contain consecuitve 1s" << endl;
+    
     return 0;
 }
